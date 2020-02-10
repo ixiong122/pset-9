@@ -17,7 +17,7 @@ h2 {
 	margin: 2%;
 }
 
-/* .container {
+ .row {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -28,7 +28,7 @@ h2 {
 	width: 100%;
 	flex-direction: column;
 	/* align children in columns instead of rows */
-}
+
 
 
 /*
@@ -36,7 +36,7 @@ h2 {
  * row of nine squares.
  */
 
-.container{
+/* .container{
   width:640px;
   margin:0 auto;
   padding-top:60px;
@@ -94,11 +94,11 @@ h2 {
  * switches (background and foreground).
  */
 
-#reset-button:hover {
+/* #reset-button:hover {
 	background-color: black;
 	color: white;
 	cursor: pointer;
-}
+} */ */
 
 .square {
 	border: 1px solid rgba(0, 0, 0, 0.75);
