@@ -1,0 +1,150 @@
+body {
+	text-align: center;
+	font-family: "Roboto", monospace;
+	background-color: lightblue;
+}
+
+h1 {
+	margin: 0 auto;
+	font-family: "Major Mono Display", monospace;
+	font-size: 48px;
+	margin: 2%;
+}
+
+h2 {
+	font-size: 36px;
+	font-weight: lighter;
+	margin: 2%;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.column {
+	height: 100%;
+	width: 100%;
+	flex-direction: column;
+	/* align children in columns instead of rows */
+}
+
+
+/*
+ * This ensures that we get three rows of three squares, rather than a single
+ * row of nine squares.
+ */
+
+.wrap {
+	flex-wrap: wrap;
+	/* tells container to drop down once it reaches max-width */
+	height: 456px;
+	width: 456px;
+}
+
+
+/*
+ * The square itself. We give it a specific size and border.
+ */
+
+.square {
+	border: 1px solid rgba(0, 0, 0, 0.75);
+	height: 150px;
+	user-select: none;
+	width: 150px;
+}
+
+
+/*
+ * And we give it a little flare when the user mouses over a square.
+ */
+
+.square:hover {
+	background-color: white;
+	cursor: pointer;
+}
+
+
+/*
+ * The reset button sits just below the board.
+ */
+
+#reset-button {
+	background-color: white;
+	border: 1px solid black;
+	color: black;
+	font-size: 21px;
+	line-height: 55px;
+	margin: 1%;
+	text-align: center;
+	width: 456px;
+}
+
+
+/*
+ * And a little flare when the user mouses over the button. The color scheme
+ * switches (background and foreground).
+ */
+
+#reset-button:hover {
+	background-color: black;
+	color: white;
+	cursor: pointer;
+}
+
+.square {
+	border: 1px solid rgba(0, 0, 0, 0.75);
+	font-size: 96px;
+	height: 150px;
+	line-height: 150px;
+	user-select: none;
+	width: 150px;
+}
+
+#firstX {
+	background-color: grey;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+}
+
+#firstX:hover {
+	background-color: lightgray;
+	cursor: pointer;
+}
+
+#firstO {
+	background-color: grey;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+}
+
+#firstO:hover {
+	background-color: lightgray;
+	cursor: pointer;
+}
+
+#xScore {
+	list-style-type: none;
+	float: left;
+}
+
+#oScore {
+	list-style-type: none;
+	float: right;
+}
+
+#tieScore {
+	list-style-type: none;
+	/* float: right; */
+}
