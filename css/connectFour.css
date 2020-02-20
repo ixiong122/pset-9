@@ -8,6 +8,11 @@
   background-color: #0417c7;
 
 }
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 
 .column {
 	height: 100%;

@@ -12,10 +12,14 @@ const winningConditions = [
 ///////////////////// APP STATE (VARIABLES) /////////////////////////
 let turn = "red";
 let win;
-let mark =
+// let mark;
+let mark = turn.style.color;
 ///////////////////// CACHED ELEMENT REFERENCES /////////////////////
-const square = Array.from(document.querySelectorAll("#board div"));
+// const square = Array.from(document.querySelectorAll("#board div"));
 const message = document.querySelector("h2");
+var playerTurn = document.querySelector('.player-turn');
+
+const square = document.querySelectorAll('.square');
 
 ///////////////////// EVENT LISTENERS ///////////////////////////////
 window.onload = init;
@@ -32,6 +36,7 @@ function init() {
 function render() {
 	board.forEach(function (mark, index) {
 		square[index].textContent = mark;
+
 	});
 
 	message.textContent =
@@ -67,6 +72,7 @@ function getWinner() {
 			board[condition[1]] === board[condition[2]]
 		) {
 			winner = board[condition[0]];
+
 			// if (winner === "X") {
 			// 	xScore++;
 			// 	document.getElementById("firstList").innerHTML = xScore;
