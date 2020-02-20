@@ -12,8 +12,12 @@ const winningConditions = [
 ///////////////////// APP STATE (VARIABLES) /////////////////////////
 let turn = "red";
 let win;
+<<<<<<< HEAD
 // let mark;
 let mark = turn.style.color;
+=======
+let colorChange = document.style.
+>>>>>>> 18060f153d19a31466c9c3c88b8d1f647a5ab183
 ///////////////////// CACHED ELEMENT REFERENCES /////////////////////
 // const square = Array.from(document.querySelectorAll("#board div"));
 const message = document.querySelector("h2");
