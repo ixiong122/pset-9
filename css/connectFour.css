@@ -1,3 +1,29 @@
+body {
+	text-align: center;
+	font-family: "Roboto", monospace;
+	background-color: lightblue;
+}
+.header{
+	background-color:black;
+  color:white;
+	overflow:hidden;
+}
+.header a{
+	float: left;
+  color: #f2f2f2;
+	background-color: #000000;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-size: 16px;
+}
+.header a:hover{
+	background-color:#ddd;
+	color: black;
+}
+.header a.active{
+	background-color:#4CAF50;
+}
 #board {
   display:flex;
   flex-wrap: wrap;
@@ -22,7 +48,7 @@
 }
 
 
-.square {
+.squares {
 
   	border: 1px solid rgba(0, 0, 0, 0.75);
   	height: 100px;
