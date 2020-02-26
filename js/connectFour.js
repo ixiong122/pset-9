@@ -54,6 +54,7 @@ function render() {
 						squares[index].style.backgroundColor = mark;
 
 
+
 	});
 }
 
