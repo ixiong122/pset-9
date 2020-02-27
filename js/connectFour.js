@@ -38,22 +38,11 @@ function init() {
 	render();
 }
 
-// function dropPiece(mark, index) {
-// if (index === 0 || index === 7 || index === 14 || index === 21 || index === 28 || index === 35) {
-// 	for (i=0;i == index != ""; i+=7) {
-// 		if (index !=="") {
-// 			squares[index].style.backgroundColor = mark;
-//
-// 		}
-// 	}
-// }
-// }
+
 function render() {
 	board.forEach(function (mark, index) {
 
 						squares[index].style.backgroundColor = mark;
-
-
 
 	});
 }
