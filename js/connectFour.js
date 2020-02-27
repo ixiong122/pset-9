@@ -41,9 +41,12 @@ function init() {
 
 function render() {
 	board.forEach(function (mark, index) {
-
-						squares[index].style.backgroundColor = mark;
-
+		if (squares[index].style.backgroundColor == "" && index >= 35) {
+			squares[index].style.backgroundColor = mark;
+			turn = mark;
+	} else if (squares[index].style.backgroundColor != "" && index <= 35) {
+			squares[index].style.backgroundColor = mark;
+	}
 	});
 }
 
