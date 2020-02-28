@@ -10,6 +10,10 @@ const winningConditions = [
 	[0, 4, 8],
 	[2, 4, 6]
 ];
+const column1 [
+
+]
+
 
 ///////////////////// APP STATE (VARIABLES) /////////////////////////
 
@@ -31,19 +35,19 @@ document.getElementById("reset-button").onclick = init;
 
 ///////////////////// FUNCTIONS /////////////////////////////////////
 function init() {
-	board = ["", "", "", "", "", "", "", "", "","", "", "", "", "", "", "", "", "","", "", "", "", "", "", "", "", "","", "", "", "", "", "", "", "", "","", "", "", "", "", "", "", ""];
+	board = ["", "", "", "", "", "", "", "", "","", "", "", "", "", "", "", "", "","", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "","", "", "", "", "", "", "", ""];
 	turn = turn;
 	win = null;
 
 	render();
 }
 
+// write a function that checks the indexes, make sure you group all of the columns together
 
 function render() {
 	board.forEach(function (mark, index) {
 		if (squares[index].style.backgroundColor == "" && index >= 35) {
 			squares[index].style.backgroundColor = mark;
-			turn = mark;
 	} else if (squares[index].style.backgroundColor != "" && index <= 35) {
 			squares[index].style.backgroundColor = mark;
 	}
@@ -55,10 +59,13 @@ function render() {
 // }
 
 function takeTurn(e) {
+	console.log(e.target);
+
 	if (!win) {
 		let index = squares.findIndex(function (square) {
 			return square === e.target;
 		});
+		console.log(index);
 
 		if (board[index] === "") {
 			board[index] = turn;
