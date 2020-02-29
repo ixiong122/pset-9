@@ -21,6 +21,7 @@ let brickHeight = 20;
 let brickPadding = 10;
 let brickOffsetTop = 30;
 let brickOffsetLeft = 30;
+let bricks = [];
 
 ///////////////////// CACHED ELEMENT REFERENCES /////////////////////
 ///////////////////// EVENT LISTENERS ///////////////////////////////
@@ -28,7 +29,12 @@ document.addEventListener("keydown", keyDownHandler, false);
 document.addEventListener("keyup", keyUpHandler, false);
 
 ///////////////////// FUNCTIONS /////////////////////////////////////
-
+for (let c = 0; c < brickColumnNumber; c++) {
+  bricks[c] = [];
+  for (let r = 0; r < brickRowNumber; r++) {
+    bricks[c][r] = { x : 0, y : 0};
+  }
+}
 
 function keyDownHandler(e) {
     if(e.key == "right" || e.key == "ArrowRight") {
@@ -89,4 +95,17 @@ function draw() {
 
     x += movedX;
     y += movedY;
+}
+function drawBricks() {
+  for (var c = 0; c < brickColumnNumber; c++) {
+    for (var r = 0; r < brickRowNumber; r++) {
+      bricks[c][r].x = 0;
+      bricks[c][r].y = 0;
+      ctx.beginPath();
+      ctx.rect(0, 0, brickWidth, brickHeight);
+      ctx.fillStyle = "#0095DD";
+      ctx.fill();
+      ctx.closePath();
+    }
+  }
 }
