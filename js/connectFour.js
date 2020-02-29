@@ -11,7 +11,7 @@ const winningConditions = [
 	[2, 4, 6]
 ];
 const column1 [
-
+ [0, 7, 14, 21, 28, 35];
 ]
 
 
