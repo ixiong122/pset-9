@@ -1,3 +1,6 @@
+img {
+	display: block;
+}
 body {
 	text-align: center;
 	font-family: "Roboto", monospace;
@@ -24,14 +27,38 @@ body {
 .header a.active{
 	background-color:#4CAF50;
 }
-.picture {
 
-  width: 441px;
-  height: 248px;
 
-}
-.picture a:hover {
-      -moz-box-shadow: 0 0 10px #ccc;
-      -webkit-box-shadow: 0 0 10px #ccc;
-      box-shadow: 0 0 10px #ccc;
-    }
+		#picture1{
+
+
+		  /* border-width: 5px;
+
+		  border-color: #E1E1E1;
+
+		  border-radius: 10px; */
+
+		}
+
+		#picture2{
+
+/*
+		  border-width: 5px;
+
+		  border-color: #E1E1E1;
+
+		  border-radius: 10px; */
+
+
+		}
+
+		#picture3{
+
+/* 
+		  border-width: 5px;
+
+		  border-color: #E1E1E1;
+
+		  border-radius: 30px; */
+
+		}

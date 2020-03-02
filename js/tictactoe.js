@@ -92,7 +92,7 @@ function takeTurn(e) {
 
 			render();
 		}
-		
+
 		if (win === "T") {
 			tieScore++;
 			document.getElementById("thirdList").innerHTML = tieScore;

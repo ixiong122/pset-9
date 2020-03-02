@@ -25,8 +25,18 @@ body {
 	background-color:#4CAF50;
 }
 canvas {
-  display: block;
+  display: center;
   margin: 0;
   border: 0.1em solid black;
 }
 canvas { background: #eee; }
+#restart {
+	background-color: white;
+	border: 1px solid black;
+	color: black;
+	font-size: 21px;
+	line-height: 55px;
+	margin: 1%;
+	text-align: center;
+	width: 456px;
+}

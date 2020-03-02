@@ -43,7 +43,9 @@ h2 {
 	justify-content: center;
 	align-items: center;
 }
-
+/* button {
+	position: relative;
+} */
 .column {
 	height: 100%;
 	width: 100%;
