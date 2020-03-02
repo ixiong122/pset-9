@@ -29,36 +29,15 @@ body {
 }
 
 
-		#picture1{
+		.column {
+  float: left;
+  width: 30%;
+  padding: 5px;
+}
 
-
-		  /* border-width: 5px;
-
-		  border-color: #E1E1E1;
-
-		  border-radius: 10px; */
-
-		}
-
-		#picture2{
-
-/*
-		  border-width: 5px;
-
-		  border-color: #E1E1E1;
-
-		  border-radius: 10px; */
-
-
-		}
-
-		#picture3{
-
-/* 
-		  border-width: 5px;
-
-		  border-color: #E1E1E1;
-
-		  border-radius: 30px; */
-
-		}
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
