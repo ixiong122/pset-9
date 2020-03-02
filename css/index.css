@@ -28,14 +28,12 @@ body {
 	background-color:#4CAF50;
 }
 
-
-		.column {
+	.column {
   float: left;
   width: 30%;
   padding: 5px;
 }
 
-/* Clear floats after image containers */
 .row::after {
   content: "";
   clear: both;

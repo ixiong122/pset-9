@@ -105,11 +105,6 @@ h2 {
 }
 
 
-/*
- * And a little flare when the user mouses over the button. The color scheme
- * switches (background and foreground).
- */
-
 #reset-button:hover {
 	background-color: black;
 	color: white;

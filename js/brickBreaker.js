@@ -41,8 +41,9 @@ document.addEventListener("mousemove", mouseMoveHandler, false);
 document.getElementById("restart").onclick = restart;
 ///////////////////// FUNCTIONS /////////////////////////////////////
 function restart() {
-document.location.reload();
+	document.location.reload();
 }
+
 function keyDownHandler(e) {
 	if (e.key == "right" || e.key == "ArrowRight") {
 		rightPressed = true;
@@ -76,7 +77,7 @@ function collision() {
 					brick2.status = 0;
 					score++;
 					if (score == brickRowNumber * brickColumnNumber) {
-						
+
 
 						alert("Congratulations! You won!");
 						document.location.reload();
@@ -123,13 +124,13 @@ function drawBricks() {
 }
 
 function drawScore() {
-	ctx.font = "16px Serif";
+	ctx.font = "16px Roboto";
 	ctx.fillStyle = "#000000";
 	ctx.fillText("Score: " + score, 8, 20);
 }
 
 function drawLives() {
-	ctx.font = "16px Serif";
+	ctx.font = "16px Roboto";
 	ctx.fillStyle = "#000000";
 	ctx.fillText("Lives: " + lives, canvas.width - 65, 20);
 }
